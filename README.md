@@ -98,7 +98,7 @@ sns.boxplot(x='Species', y='SepalWidthCm', data=df
 sns.boxplot(x='Species', y='PetalLengthCm', data=df
            ).set_title("Length of the Petal (in Centimeters) Grouped by Species")
 ~~~
-![img](./images/plcm.png")
+![img](./images/plcm.png)
 
 ~~~python
 sns.boxplot(x='Species', y='PetalWidthCm', data=df
