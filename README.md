@@ -1,6 +1,9 @@
 # Iris Species
 
 1. [Importar librerías ](#schema1)
+2. [Cargar los datos](#schema2)
+3. [Visualización](#schema3)
+4. [Procesamiento de datos](#schema4)
 
 <hr>
 
@@ -78,18 +81,18 @@ max	7.900000	4.400000	6.900000	2.500000
 ~~~python
 sns.pairplot(df, hue = 'Species')
 ~~~
-![img](./images/plot.png")
+![img](./images/plot.png)
 
 ~~~python
 sns.boxplot(x='Species', y='SepalLengthCm', data=df
            ).set_title("Length of the Sepal (in Centimeters) Grouped by Species")
 ~~~
-![img](./images/slcm.png")
+![img](./images/slcm.png)
 ~~~python
 sns.boxplot(x='Species', y='SepalWidthCm', data=df
            ).set_title("Width of the Sepal (in Centimeters) Grouped by Species")
 ~~~
-![img](./images/swcm.png")
+![img](./images/swcm.png)
 
 ~~~python
 sns.boxplot(x='Species', y='PetalLengthCm', data=df
@@ -101,7 +104,7 @@ sns.boxplot(x='Species', y='PetalLengthCm', data=df
 sns.boxplot(x='Species', y='PetalWidthCm', data=df
            ).set_title("Width of the Petal (in Centimeters) Grouped by Species")
 ~~~
-![img](./images/pwcm.png")
+![img](./images/pwcm.png)
 
 
 <hr>
@@ -178,4 +181,4 @@ Number of Support Vectors for each Class:  [ 6 18 19]
 plot_confusion_matrix(clf, X_test, y_test)
 
 ~~~
-![img](./images/con.png")
+![img](./images/con.png)
